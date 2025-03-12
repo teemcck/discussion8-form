@@ -4,21 +4,39 @@
   form {
     display: grid;
     grid-template-columns: 50% 50%;
-    border: 1px solid #ccc;
+    border: 1px solid #F78C31;
     border-radius: 16px;
     width:70%;
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #702082;
-    background: #CFC096;
+    color: #F76931;
+    background: #FAE5C4;
+  }
+
+  label {
+    font-family: "ubuntu";
   }
 
   .radio {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-start: 1;
     grid-column-end: 3;
-    /* background: #575294; */
-    color: #702082;
+    color: #F76931;
+  }
+
+  .radio:nth-child(0) {
+    grid-column: span 3;
+  }
+
+  .skip-to-main {
+    position: absolute;
+    top: -40px;
+  }
+
+  .skip-to-main:focus {
+    top: 0px;
   }
 
   #name {
@@ -26,8 +44,8 @@
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
-    background: #CFC096;
-    color: #9B9A6D;
+    background: #FAE5C4;
+    color: #FAE5C4;
   }
 
   #message {
@@ -39,14 +57,14 @@
   input,
   textarea {
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #F78C31;
     width: 100%;
   }
 
   input[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #F7C331;
     color: white;
     border: none;
     border-radius: 5px;
@@ -54,5 +72,5 @@
   }
 
   input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #F7C331;
   }
