@@ -27,7 +27,7 @@
   }
 
   .radio:nth-child(0) {
-    grid-column: span 3;
+    grid-column: span 2;
   }
 
   .skip-to-main {
@@ -37,6 +37,10 @@
 
   .skip-to-main:focus {
     top: 0px;
+  }
+
+  .reset, .submit {
+    grid-column: span 2;
   }
 
   #name {
